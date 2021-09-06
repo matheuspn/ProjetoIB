@@ -15,8 +15,8 @@ create_table_queries = [
         artist_id VARCHAR(255) UNIQUE NOT NULL,
         nome VARCHAR(100) NOT NULL,
         localizacao VARCHAR(255) UNIQUE,
-        latitude REAL,
-        longitude REAL,
+        latitude double precision,
+        longitude double precision,
         PRIMARY KEY (artist_id, localizacao)
     )
     """,
